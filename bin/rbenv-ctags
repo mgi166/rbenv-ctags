@@ -12,6 +12,21 @@ if [ "$1" = "--complete" ]; then
   exec rbenv-versions --bare
 fi
 
+VERSIONS=()
+EMACS_OPT=0
+
+for opt in $@; do
+  case $opt in
+  '-e'|'--emacs' )
+    EMACS_OPT=1
+    ;;
+  * )
+    VERSIONS+=($1)
+    shift
+    ;;
+  esac
+done
+
 generate_ctags_in() {
   echo "Running ctags on $1"
 
