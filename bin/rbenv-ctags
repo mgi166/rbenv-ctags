@@ -14,7 +14,12 @@ fi
 
 generate_ctags_in() {
   echo "Running ctags on $1"
-  (cd "$1"; ctags -R --languages=ruby)
+
+  if [ 1 -eq $EMACS_OPT ]; then
+    (cd "$1"; ctags -eR --languages=ruby)
+  else
+    (cd "$1"; ctags -R --languages=ruby)
+  fi
 }
 
 generate_ctags_for() {
