@@ -3,6 +3,13 @@
 I've got [tags for my code base][Git Ctags].  I've got [tags for my
 gems][gem-ctags].  All I'm missing is tags for Ruby stdlib.  Until now.
 
+## Caution
+
+Original [tpope/rbenv-ctags](https://github.com/tpope/rbenv-ctags) generates the tags for `Vim`.  
+But This [mgi166/rbenv-ctags](https://github.com/mgi166/rbenv-ctags) generate the tags for `Emacs`.  
+
+Because it is hard to satisfy both [tpope/rbenv-ctags](https://github.com/tpope/rbenv-ctags) system and this improvement, and I use in favor of `Emacs`
+
 ## Installation
 
     mkdir -p ~/.rbenv/plugins
