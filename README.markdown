@@ -13,8 +13,7 @@ Because it is hard to satisfy both [tpope/rbenv-ctags](https://github.com/tpope/
 ## Installation
 
     mkdir -p ~/.rbenv/plugins
-    git clone git://github.com/tpope/rbenv-ctags.git \
-      ~/.rbenv/plugins/rbenv-ctags
+    git clone git@github.com:mgi166/rbenv-ctags.git ~/.rbenv/plugins/rbenv-ctags
     rbenv ctags
 
 You'll also need [Exuberant Ctags][].  With Homebrew, `brew install ctags`.
