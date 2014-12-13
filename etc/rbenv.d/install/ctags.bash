@@ -4,6 +4,6 @@ fi
 
 generate_ctags() {
   if [ "$STATUS" -eq 0 ]; then
-    rbenv-ctags "$VERSION_NAME"
+    rbenv-ctags "$VERSION_NAME" "--emacs"
   fi
 }
